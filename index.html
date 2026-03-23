@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_personal_page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('fonts/main_font.css');
+
+        * {
+            /* Сбрасывание стандартных стилей и добавление шрифтов */
+            margin: 0;
+            font-family: 'StratosSkyeng', sans-serif;
+        }
+
+        .content {
+            /* Эти два свойства нужны чтобы фон подстраивался на весь экран */
+            background-size: cover;
+            min-height: 100vh;
+            /* Пиши свой код ниже */
+            
+        }
+
+
+        /* Класс для расположения элементов в 1 ряд */
+        .in-one-line {
+            display: flex;
+            /* Отступ между элементами */
+            gap: 32px;
+        }
+        
+        /* Класс для центрирования страницы */
+        .center {
+            padding-left: calc(50% - 500px);  
+            padding-right: calc(50% - 500px);
+        }
+    </style>
+</head>
+<body>
+    <div class="content" style="text-align: center;">
+            <div class="pager-top">
+                <a class="nav-link" href="quotes.html">Назад</a>
+                <a class="nav-link" href="facts.html">Вперёд</a>
+            </div>
+            <h1 style="margin-bottom: 12px;">Привет это моя личная страница</h1>
+            <h2 style="margin-bottom: 16px;">Здесь я рассказываю о себе и о своих интересах</h2>
+
+            <div style="display: flex; align-items: center; justify-content: center; gap: 48px; margin-top: 24px; flex-wrap: wrap;">
+                <img
+                    src="images/goose.jpeg"
+                    style="max-width: 430px; width: 100%; border-radius: 12px;"
+                >
+
+                <div style="max-width: 700px; text-align: center;">
+                    <p style="margin-bottom: 18px; font-size: 30px; line-height: 1.35;">
+                        Я изучаю фронтенд разработку и делаю свои первые сайты, мне нравится создавать красивые страницы,
+                        добавлять новые фишки и улучшать дизайн
+                    </p>
+
+                    <ul style="list-style-position: inside; font-size: 30px; line-height: 1.4;">
+                        <li>Моё хобби: программирование, музыка, игры</li>
+                        <li>Любимые игры: COD:MW19, Dota 2, Deep Rock Galactic</li>
+                        <li>Топ музыки: breakcore, lo-fi, jazz</li>
+                        <li>На этом сайте собраны факты, мемы и любимые цитаты</li>
+                    </ul>
+                </div>
+            </div>
+
+        
+    </div>
+    <div class="in-one-line"></div> <!-- Используй этот блок чтобы расположить элементы в 1 ряд внутри этого блока -->
+</body>
+</html>
